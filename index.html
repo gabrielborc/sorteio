@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorteio</title>
+
+
+    <link rel="stylesheet" href="assets/css/all.min.css"> 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body style="padding: 10px">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="jumbotron">
+                    <h1 class="dispaly-4">Cadatro</h1>
+                    <p class="lead">Ao serem sorteados vão saindo da lista</p>
+
+                    <hr>
+
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Preencha os caditados aqui!" required>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">
+                            <i class="fas fa-save"></i> 
+                            Salvar
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table" id="tb_participantes">
+                    <thead>
+                        <th>Participantes</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
