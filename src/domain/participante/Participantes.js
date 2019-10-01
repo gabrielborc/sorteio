@@ -17,6 +17,15 @@ class Participantes {
         }
     }
 
+    soteia() {
+        let indiceSorteado = Math.trunc(Math.random() * this._participantes.length);
+        let sorteado = this._participantes[indiceSorteado];
+
+        this._participantes.splice(indiceSorteado, 1);
+
+        return sorteado;
+    }
+
     paraArray() {
         return [].concat(this._participantes);
     }

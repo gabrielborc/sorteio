@@ -6,3 +6,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
     e.preventDefault();
 });
+
+document.querySelector('#btnSoteia').addEventListener('click', function(e) {
+    participanteController.sorteia();
+});

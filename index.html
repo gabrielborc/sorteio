@@ -5,36 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sorteio</title>
-
+    
     <link rel="stylesheet" href="assets/css/all.min.css"> 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owner.css">
 </head>
 <body style="padding: 10px">
     <div class="container">
         <div class="row">
             <div class="col-12">
 
-                <div class="jumbotron">
-                    <h1 class="dispaly-4">Cadatro</h1>
-                    <p class="lead">Ao serem sorteados vão saindo da lista</p>
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Clover">
+                </div>
 
-                    <hr>
-
-                    <form action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Preencha os caditados aqui!" required>
-                        </div>
-                        <button type="submit" class="btn btn-lg btn-success">
-                            <i class="fas fa-save"></i> 
-                            Salvar
-                        </button>
-                    </form>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Preencha os caditados aqui!" required>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success">
+                                <i class="fas fa-save"></i> 
+                                Salvar
+                            </button>
+                            <button type="button" id="btnSoteia" class="btn btn-lg btn-light">
+                                <i class="fas fa-grimace"></i> 
+                                Sortear
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="row">
+        <div class="card text-white bg-success mb-3" id="sortiado">
+            <div class="card-header">Parábens</div>
+            <div class="card-body">
+                <h2 class="card-title text-center">
+                    <img src="assets/img/clover.png" alt="Clover">
+                    <span class="nome-sortiado"></span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
             <div class="col-12">
                 <table class="table" id="tb_participantes">
                     <thead>

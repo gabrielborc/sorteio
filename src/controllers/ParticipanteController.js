@@ -11,4 +11,9 @@ class ParticipanteController {
         this._participanteView.atualizaParticipantes(this._participantes.paraArray());
     }
 
+    sorteia() {
+       this._participanteView.mostraSorteado(this._participantes.soteia()); 
+       this._participanteView.atualizaParticipantes(this._participantes.paraArray());
+    }
+
 }
